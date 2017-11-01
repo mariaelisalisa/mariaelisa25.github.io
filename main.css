@@ -6,6 +6,11 @@ body {
 	width: 100%;
 }
 
+.page-title {
+  text-align: center;
+  font-weight: 100;
+}
+
 h1 {
 	font-size: 32px;
   font-family: Palatino, 'Palatino Linotype', serif;
@@ -29,7 +34,28 @@ p {
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
 
+/* FOOTER NAVIGATION */
+
+nav {
+  background-color: #FFF;
+}
+
+nav li {
+  margin: 0;
+  padding: 0 10px;
+  display: inline;
+}
+
+nav ul {
+  display: inline;
+}
+
 #footer {
 	color: AntiqueWhite;
 	font-size: 16px;
 }
+
+
+
+
+
