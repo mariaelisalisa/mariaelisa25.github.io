@@ -3,8 +3,6 @@
   text-color: #ffddf4;
   font-family: Crimson Text;
   display: inline;
-
-
 }
 
 nav li {
@@ -17,12 +15,6 @@ nav ul {
   display: inline;
 }
 
-body {
-	font-family: Georgia, serif;
-	height: 100%;
-	margin: 0;
-	text-align: center;
-	width: 100%;
 }
 
 page-title {
@@ -76,8 +68,6 @@ nav li {
 nav ul {
   display: inline;
 }
-
-
 
 #footer {
 	color: AntiqueWhite;
