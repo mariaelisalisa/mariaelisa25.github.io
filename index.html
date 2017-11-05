@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Maria Elisa</title>
+  <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
   body {
       font: 400 15px Lato, sans-serif;
@@ -18,130 +17,43 @@
       color: #818181;
   }
   h2 {
-      font-size: 26px;
+      font-size: 24px;
+      text-transform: uppercase;
       color: #303030;
       font-weight: 600;
       margin-bottom: 30px;
   }
-  
-   h3 {
-      font-size: 23px;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
-  }
-  
   h4 {
       font-size: 19px;
       line-height: 1.375em;
       color: #303030;
       font-weight: 400;
       margin-bottom: 30px;
-  } 
-  
-   h6 {
-      font: 400 20px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
-  }
-  
+  }  
   .jumbotron {
-      background-color: #ffdae9;
-      color: #444440;
+      background-color: #f4511e;
+      color: #fff;
       padding: 100px 25px;
-      font-family: Playfair Display Black, sans-serif;
+      font-family: Montserrat, sans-serif;
   }
   .container-fluid {
       padding: 60px 50px;
   }
-  .bg-pink {
-      background-color: #ffdae9;
+  .bg-grey {
+      background-color: #f6f6f6;
   }
-  
-  .bg-creme {
-      background-color: #fcf1dc;
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
   }
-  
-  .bg-yellow {
-      background-color: #ffffba;
-  }
-  
-  .bg-mint {
-      background-color: #deffee;
-  }
-  
-   .bg-blue {
-      background-color: #dbe4ff;
-  }
-  
-  .bg-purple {
-      background-color: #f0dbff;
-  }
-   
-  .fa {
-  padding: 4px;
-  font-size: 24px;
-  width: 32px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-  }
-
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  .fa-envelope {
-  background: #fff;
-  color: #ffdae9;
-  }
-
-  .fa-instagram {
-  background: #fff;
-  color: #ffdae9;
-  }
-
-  .fa-twitter {
-  background: #fff;
-  color: #ffdae9;
-  }
-
- .fa-github {
-  background: #fff;
-  color: #ffdae9;
- }
-
- .fa-linkedin {
-  background: #fff;
-  color: #ffdae9;
- }
-
- .fa-google {
-  background: #fff;
-  color: #ffdae9;
- }
-
- .fa-tumblr {
-  background: #fff;
-  color: #ffdae9;
- }
-
- .fa-pinterest {
-  background: #fff;
-  color: #ffdae9;
- }
- 
-  .fa-file {
-  background: #fff;
-  color: #ffdae9;
- }
-  
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
   }
   .thumbnail {
       padding: 0 0 15px 0;
       border: none;
-      border-radius: none;
+      border-radius: 0;
   }
   .thumbnail img {
       width: 100%;
@@ -149,7 +61,6 @@
       margin-bottom: 10px;
   }
   
-  }
   .item h4 {
       font-size: 19px;
       line-height: 1.375em;
@@ -161,10 +72,9 @@
       font-style: normal;
   }
   
-  
   .navbar {
       margin-bottom: 0;
-      background-color: #ffdae9;
+      background-color: #f4511e;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -173,14 +83,11 @@
       border-radius: 0;
       font-family: Montserrat, sans-serif;
   }
-  
- 
-  
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #ffdae9 !important;
+      color: #f4511e !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -191,7 +98,6 @@
       font-size: 20px;
       margin-bottom: 20px;
       color: #f4511e;
-      
   }
   
   @keyframes slide {
@@ -219,7 +125,10 @@
       text-align: center;
       margin: 25px 0;
     }
-    
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
   }
   @media screen and (max-width: 480px) {
     .logo {
@@ -237,171 +146,158 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
-      </button>
-      
+    
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skill">Skill</a></li>
-        <li><a href="#project">Projects</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="jumbotron text-center">
+  <h1>Company</h1> 
+  <p>We specialize in blablabla</p> 
   
-        <img src="https://www.w3schools.com/bootstrap/bandmember.jpg" class="img-circle person" width="255" height="255">
-  
-  
-  <h1>Maria Elisa</h1>
-  <h6>Tech & Digital Enthusiast</h6>
-  
-  <!-- Add font awesome icons -->
-<a href="mailto:maria_el25@yahoo.com" class="fa fa-envelope"></a>
-<a href="https://instagram.com/mariaelisalisa" class="fa fa-instagram"></a>
-<a href="http://twitter.com/hellomariaelisa" class="fa fa-twitter"></a>
-<a href="https://mariaelisa25.github.io/" class="fa fa-github"></a>
-<a href="https://www.linkedin.com/in/maria-elisa/" class="fa fa-linkedin"></a>
-<a href="https://hellomariaelisa.blogspot.co.id/" class="fa fa-google"></a>
-<a href="http://pinterest.com/marialeung_" class="fa fa-pinterest"></a>
-<a href="#" class="fa fa-file"></a>
-
 </div>
-
-
 
 <!-- Container (About Section) -->
-<div id="about-me" class="container-fluid text-center">
-      <h2>About Me</h2><br>
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       
-      <p>Hey! I'm Maria. I graduated from South China University of Technology in 2015, major in Computer Science. I started coding when I need to code and design my blog, probably why I still love coding and never turn back. From hobby turn into passion which leads me to improve and enhance my coding skill with <b>freeCodeCamp</b>. I also have interest towards digital industry, e-commerce, mobile apps development, and startup. </p>
-            
+    </div>
+    </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>
 </div>
 
-<!-- Container (Education Section) -->
-<div id="education" class="container-fluid text-center bg-mint">
-  <h2>Education</h2>
-  <h4>South China University of Technology, B.Eng in Computer Science, 2011 - 2015</h4>
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center ">
+  <h2>Portfolio</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://mariaelisa25.github.io/img/project-blog.png" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div><br>
   
-  <h4>Guangdong University of Foreign Studies, Chinese Language, 2015 - 2016</h4>
- 
-</div>
-
-<!-- Container (Work Experience Section) -->
-<div id="experience" class="container-fluid text-center">
-    <h2>Work Experience</h2>
   
-  <h3>Blogger</h2>
-  <h4>June 2016 - present</h3>
-  
-  <h3>Marketing, PT. Kohyei Indonesia,</h3>
-  <h4> March 2017 – June 2017</h4>
-  <p>A trading company engaged in chemicals, rubbers, plastics, industrial materials, coatings, and adhesives. My responsibles are market research, develop price strategies, working with vendors and suppliers and interpret Mandarin to Indonesian, vice versa.</p><br>
-  
-  
-</div>
-
-<!-- Container (Skill Section) -->
-<div id="skill" class="container-fluid bg-blue">
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
   <div class="text-center">
-    <h2>Skills + Tools</h2>
-    <div class="row">
-      <div class="col-sm-6">
-    
-    <h4>C++</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:50%"></div>
-  </div><br>
-  
-  <h4>Java</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:30%"></div>
-  </div><br>
-  
-  <h4>HTML & CSS</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:70%"></div>
-  </div><br>
-  
-  
-    <h4>Android Development</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:55%"></div>
-  </div><br>
-  
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
   </div>
-    
-    <div class="row">
-      <div class="col-sm-6">
-    
-     <h4>Analysis</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:75%"></div>
-  </div><br>
-     
-     <h4>Photoshop</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:90%"></div>
-  </div><br>
-
-<h4>Blogging</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:80%"></div>
-  </div><br>
   
-  <h4>Microsoft Office</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:70%"></div>
-  </div><br>
-
-    </div>
-    </div>
-    </div>
+             
+       
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="project" class="container-fluid text-center">
-  <h2>Projects</h2></br>
- 
-        <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="/img/project-blog.png" alt="Maria Elisa" width="400" height="300">
+<div id="contact" class="container-fluid">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
       </div>
-      </div>
-      
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="img/project-blog.png" alt="New York" width="400" height="300">
-        
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
       </div>
     </div>
-    
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="img/project-blog.png"  width="400" height="300">
-        
-      </div>
-    </div>
-  </div><br>
-        
-      
-      </div>
-    </div>
- 
+  </div>
+</div>
 
-<footer class="container-fluid text-center bg-purple">
+
+
+
+<footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>MADE WITH <span class="glyphicon glyphicon-heart"> </p>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
 </footer>
 
 <script>
