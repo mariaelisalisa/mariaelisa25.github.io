@@ -79,8 +79,6 @@
   }
   
   
-  
-  
   .fa {
   padding: 4px;
   font-size: 24px;
@@ -144,22 +142,14 @@
   .thumbnail {
       padding: 0 0 15px 0;
       border: none;
-      border-radius: 0;
+      border-radius: none;
   }
   .thumbnail img {
       width: 100%;
       height: 100%;
       margin-bottom: 10px;
   }
-  .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #f4511e;
-  }
-  .carousel-indicators li {
-      border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-      background-color: #f4511e;
+  
   }
   .item h4 {
       font-size: 19px;
@@ -240,14 +230,7 @@
       color: #f4511e;
       
   }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
+  
   @keyframes slide {
     0% {
       opacity: 0;
@@ -424,27 +407,27 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="project" class="container-fluid ">
-  <h2 class="text-center">Projects</h2>
+<div id="project" class="container-fluid text-center ">
+  <h2>Projects</h2>
  
         <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="/img/project-blog.png" width="400" height="300">
+        <img src="/img/project-blog.png" alt="Maria Elisa" width="400" height="300">
       </div>
       </div>
       
       
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <img src="newyork.jpg" width="400" height="300">
         
       </div>
     </div>
     
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <img src="sanfran.jpg"  width="400" height="300">
         
       </div>
     </div>
