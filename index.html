@@ -10,7 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <style>
   body {
       font: 400 15px Lato, sans-serif;
@@ -33,14 +34,14 @@
   }  
   .jumbotron {
       background-color: #ffdae9;
-      color: #444440;
+      color: #fff;
       padding: 100px 25px;
       font-family: Playfair Display Black, sans-serif;
   }
   .container-fluid {
       padding: 60px 50px;
   }
-.bg-pink {
+  .bg-pink {
       background-color: #ffdae9;
   }
   
@@ -63,8 +64,7 @@
   .bg-purple {
       background-color: #f0dbff;
   }
-  
- .fa {
+  .fa {
   padding: 4px;
   font-size: 24px;
   width: 32px;
@@ -78,7 +78,7 @@
     opacity: 0.7;
   }
   
-  .fa-envelope {
+  .fa-envelope, fa-instagram {
   background: #fff;
   color: #ffdae9;
   }
@@ -121,8 +121,8 @@
   .fa-file {
   background: #fff;
   color: #ffdae9;
- }    
-    
+ }
+ 
   .thumbnail {
       padding: 0 0 15px 0;
       border: none;
@@ -144,91 +144,8 @@
   .item span {
       font-style: normal;
   }
-    
-    .bg-pink {
-      background-color: #ffdae9;
-  }
-  
-  .bg-creme {
-      background-color: #fcf1dc;
-  }
-  
-  .bg-yellow {
-      background-color: #ffffba;
-  }
-  
-  .bg-mint {
-      background-color: #deffee;
-  }
-  
-   .bg-blue {
-      background-color: #dbe4ff;
-  }
-  
-  .bg-purple {
-      background-color: #f0dbff;
-  }
-   
-  .fa {
-  padding: 4px;
-  font-size: 24px;
-  width: 32px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-  }
-
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  .fa-envelope {
-  background: #fff;
-  color: #ffdae9;
-  }
-
-  .fa-instagram {
-  background: #fff;
-  color: #ffdae9;
-  }
-
-  .fa-twitter {
-  background: #fff;
-  color: #ffdae9;
-  }
-
- .fa-github {
-  background: #fff;
-  color: #ffdae9;
- }
-
- .fa-linkedin {
-  background: #fff;
-  color: #ffdae9;
- }
-
- .fa-google {
-  background: #fff;
-  color: #ffdae9;
- }
-
- .fa-tumblr {
-  background: #fff;
-  color: #ffdae9;
- }
-
- .fa-pinterest {
-  background: #fff;
-  color: #ffdae9;
- }
  
-  .fa-file {
-  background: #fff;
-  color: #ffdae9;
- }
-  
-    .navbar {
+  .navbar {
       margin-bottom: 0;
       background-color: #ffdae9;
       z-index: 9999;
@@ -239,7 +156,6 @@
       border-radius: 0;
       font-family: Montserrat, sans-serif;
   }
- 
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
   }
@@ -256,7 +172,14 @@
       margin-bottom: 20px;
       color: #f4511e;
   }
-  
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
   @keyframes slide {
     0% {
       opacity: 0;
@@ -303,27 +226,28 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
+      </button>
     
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about-me">About Me</a></li>
+      	<li><a href="#about-me">About Me</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skill</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="jumbotron text-center">
-  <img src="https://www.w3schools.com/bootstrap/bandmember.jpg" class="img-circle person" width="255" height="255">
- 
+<img src="https://www.w3schools.com/bootstrap/bandmember.jpg" class="img-circle person" width="255" height="255">
   <h1>Maria Elisa</h1>
-  <h6>Tech & Digital Enthusiast</h6> 
+    <h6>Tech & Digital Enthusiast</h6>
+
   
-  <!-- Add social icons -->
+  <!-- Add font awesome icons -->
 <a href="mailto:maria_el25@yahoo.com" class="fa fa-envelope"></a>
 <a href="https://instagram.com/mariaelisalisa" class="fa fa-instagram"></a>
 <a href="http://twitter.com/hellomariaelisa" class="fa fa-twitter"></a>
@@ -332,137 +256,90 @@
 <a href="https://hellomariaelisa.blogspot.co.id/" class="fa fa-google"></a>
 <a href="http://pinterest.com/marialeung_" class="fa fa-pinterest"></a>
 <a href="#" class="fa fa-file"></a>
+
+  
   
 </div>
 
 <!-- Container (About Me Section) -->
 <div id="about-me" class="container-fluid text-center">
-      <h2>About Me</h2><br>
+  
+      <h2>About Me</h2>
       
-      <p>Hey! I'm Maria. I graduated from South China University of Technology in 2015, major in Computer Science. I started coding when I need to code and design my blog, probably why I still love coding and never turn back. From hobby turn into passion which leads me to improve and enhance my coding skill with <b>freeCodeCamp</b>. I also have interest towards digital industry, e-commerce, mobile apps development, and startup. </p>
-    </div>
-    </div>
-</div>
-
-<!-- Container (Education Section) -->
-<div id="education" class="container-fluid text-center bg-mint">
-  <h2>Education</h2>
-  <h4>South China University of Technology, B.Eng in Computer Science, 2011 - 2015</h4>
-  
-  <h4>Guangdong University of Foreign Studies, Chinese Language, 2015 - 2016</h4>
- 
-</div>
-  
-  <!-- Container (Work Experience Section) -->
-<div id="experience" class="container-fluid text-center">
-    <h2>Work Experience</h2>
-  
-  <h3>Blogger</h2>
-  <h4>June 2016 - present</h3>
-  
-  <h3>Marketing, PT. Kohyei Indonesia,</h3>
-  <h4> March 2017 – June 2017</h4>
-  <p>A trading company engaged in chemicals, rubbers, plastics, industrial materials, coatings, and adhesives. My responsibles are market research, develop price strategies, working with vendors and suppliers and interpret Mandarin to Indonesian, vice versa.</p><br>
-  
-  
-</div>
-  
-  <!-- Container (Skills Section) -->
-<div id="skills" class="container-fluid bg-blue">
-  <div class="text-center">
-    <h2>Skills + Tools</h2>
-    <div class="row">
-      <div class="col-sm-6">
-    
-    <h4>C++</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:50%"></div>
-  </div><br>
-  
-  <h4>Java</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:30%"></div>
-  </div><br>
-  
-  <h4>HTML & CSS</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:70%"></div>
-  </div><br>
-  
-  
-    <h4>Android Development</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:55%"></div>
-  </div><br>
-  
-  </div>
-    
-    <div class="row">
-      <div class="col-sm-6">
-    
-     <h4>Analysis</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:75%"></div>
-  </div><br>
+     <h4>Hey! I'm Maria. I graduated from South China University of Technology in 2015, major in Computer Science. I started coding when I need to code and design my blog, probably why I still love coding and never turn back. From hobby turn into passion which leads me to improve and enhance my coding skill with freeCodeCamp. I also have interest towards digital industry, e-commerce, mobile apps development, and startup.</h4><br>
      
-     <h4>Photoshop</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:90%"></div>
-  </div><br>
-
-<h4>Blogging</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:80%"></div>
-  </div><br>
+     <h2>Achievements</h2>
+      
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      
+      
+    </div>
+    
+    
+    <!-- Container (Education) -->
+<div id="education" class="container-fluid bg-mint">
+  <div class="text-center">
+    <h2>Education</h2>
+    <h4>Choose a payment plan that works for you</h4>
   
-  <h4>Microsoft Office</h4>
-  <div class="progress">
-    <div class="progress-bar" style="width:70%"></div>
-  </div><br>
+  
+  
+      </div>      
+    </div>    
+  
 
-    </div>
-    </div>
-    </div>
-  </div>
+<!-- Container (Experience Section) -->
+<div id="experience" class="container-fluid text-center bg-grey">
+  <h2>Work Experience</h2>
+  <h4>What we offer</h4>
+  
 </div>
 
-<!-- Container (Projects Section) -->
-<div id="projects" class="container-fluid text-center ">
-  <h2>Projects</h2><br>
-  <div class="row text-center slideanim">
+<!-- Container (Portfolio Section) -->
+<div id="skill" class="container-fluid text-center bg-blue">
+  <h2>Skills + Tools</h2><br>
+  <h4>What we have created</h4>
+  
+  </div>
+   
+
+<!-- Container (Contact Section) -->
+<div id="project" class="container-fluid bg-grey">
+  <h2 class="text-center">Projects</h2>
+  
+     <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="https://mariaelisa25.github.io/img/project-blog.png" alt="Personal Blog" width="400" height="300">
+        <img src="img/project-blog.png" alt="Mobile App" width="400" height="300">
         <p><strong>Paris</strong></p>
         <p>Yes, we built Paris</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="https://mariaelisa25.github.io/img/project-blog.png" alt="New York" width="400" height="300">
+        <img src="img/project-blog.png" alt="Personal Blog" width="400" height="300">
         <p><strong>New York</strong></p>
         <p>We built New York</p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="https://mariaelisa25.github.io/img/project-blog.png" alt="San Francisco" width="400" height="300">
+        <img src="img/project-blog.png" alt="San Francisco" width="400" height="300">
         <p><strong>San Francisco</strong></p>
         <p>Yes, San Fran is ours</p>
       </div>
+    </div> 
     </div>
-  </div><br>
-
-
-
+     </div>
+    
+  
 
 <footer class="container-fluid text-center bg-purple">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>MADE WITH <span class="glyphicon glyphicon-heart"> </p>
+  <p>Code with <span class="glyphicon glyphicon-heart"></p>
 </footer>
-
 
 <script>
 $(document).ready(function(){
